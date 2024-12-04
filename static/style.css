@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Exo", sans-serif;
+}
+
+.ms-4 {
+    margin-left: 4.5rem!important;
+}
+main{
+    background-image: url(/static/bg_img.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding-top: 20px;
+    height: 100%;
+}
+main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/static/body_pattern.png);
+    width: 100vw;
+    background-size: 30%;
+    background-repeat: repeat;
+    height: 100vh;
+}
+.custom-container {
+    margin-left: 10%;
+}
+
+.btn {
+    color: #fff;
+    background: linear-gradient(180deg, #7CA200, #199B00);
+    text-transform: initial;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.btn.btn-action {
+    background: #4a4a4a;
+    color: white;
+}
+
+
+
+.custom-header {
+    background-color: #4a4a4a;
+    color: white;
+    padding-inline: 10px;
+    font-weight: 500;
+    padding-block: 20px;
+}
+
+header.custom-container {
+    font-style: italic;
+}
+
+header.custom-container a {
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+/*Radio buttons*/
+
+
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+    position: absolute; /* Keep them in the flow but off-screen */
+}
+
+input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin-right: 15px;
+    background-clip: content-box;
+    border: 1px solid #69A101;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer; /* Makes the label clickable */
+}
+
+/* When the radio button is selected, change the background color */
+input[type="radio"]:checked + label:before {
+    background-color: #69A101;
+    padding: 6px;
+    box-shadow: inset 0 0 0 7px white;
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.brand-title {
+    color: #646464;
+}
+
+.brand-image {
+    height: 19px;
+}
+
+.brand-container {
+    margin-block: 53px;
+}
+
+.number_of_question {
+    color: #429E00;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.questions-container {
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+}
+
+.btn-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#exam-container {
+	height: 100%;
+	overflow: scroll;
+}
+
+/* Highlight unanswered questions */
+.unanswered {
+    border: 2px solid red;
+}
+
+/* Custom Modal Styling */
+.modal-content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #4a4a4a;
+    color: white;
+    border-bottom: none;
+    padding: 15px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+    background-color: #f3f3f3;
+    padding: 15px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.modal-footer .btn {
+    background: linear-gradient(180deg, #7CA200, #199B00);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+    background: #4a4a4a;
+    color: #fff;
+}
