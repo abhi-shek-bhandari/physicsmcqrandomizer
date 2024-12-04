@@ -42,3 +42,23 @@ The **Physics MCQ Randomizer** is a web-based application designed to generate r
    ```bash
    git clone https://github.com/your-repo/physics-mcq-randomizer.git
    cd physics-mcq-randomizer
+
+2. **Install Dependencies**:
+    ```bash
+    pip install flask nltk
+
+3. **Run the Application**:
+    ```bash
+    flask run
+
+4. **Access the Application**:
+    ```bash
+    http://127.0.0.1:5000/
+    
+## How to Use
+
+1. Enter the desired number of questions in the input field.
+2. Click the "Generate" button to create a quiz.
+3. Answer the questions displayed and submit your responses.
+4. View your score and feedback in a pop-up modal.
+
