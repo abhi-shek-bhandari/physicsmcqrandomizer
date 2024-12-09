@@ -442,7 +442,7 @@ def LO_2_question_generator(num_of_questions=1):
             f"{correct_force} N",
             f"{correct_force + 500} N",
             f"{correct_force + 1000} N",
-            f"{correct_force + 1500} N"
+            f"{2.91} N"
         ]
 
         # Shuffling choices while keeping track of the correct one
